@@ -17,6 +17,7 @@ get_header('bprint_1');
 
 <?php get_template_part('template-parts/hero/hero_1'); ?>
 <?php get_template_part('template-parts/product-menu/product_menu_1'); ?>
+<?php get_template_part('template-parts/top-hits/top_hits_1'); ?>
 
 <?php
 get_footer();

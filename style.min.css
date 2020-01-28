@@ -117,7 +117,7 @@ embed,iframe,object{max-width:100%}
 .gallery-columns-8 .gallery-item{max-width:12.5%}
 .gallery-columns-9 .gallery-item{max-width:11.11%}
 .gallery-caption{display:block}
-.flex{display:-webkit-box;display:-ms-flexbox;display:flex}
+.flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-flow:wrap;flex-flow:wrap}
 .center-vertical{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .space-between{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .space-around{-ms-flex-pack:distribute;justify-content:space-around}
@@ -158,6 +158,16 @@ embed,iframe,object{max-width:100%}
 .product_menu_1_section .product_menu_1_wrapper .product_menu_1_items .product_menu_1_item{position:relative}
 .product_menu_1_section .product_menu_1_wrapper .product_menu_1_items .product_menu_1_item img{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);margin-right:-50%;max-height:100px}
 .product_menu_1_section .product_menu_1_wrapper .product_menu_1_items .product_menu_1_item h2{margin-top:140px;font-size:14px;font-weight:bold;text-align:center}
+.top_hits_1_section .top_hits_1_wrapper{padding:20px 15px}
+.top_hits_1_section .top_hits_1_wrapper .top_hits_1_heading{padding-top:20px;padding-bottom:10px}
+.top_hits_1_section .top_hits_1_wrapper .top_hits_1_heading h2{margin:0;font-size:24px;font-weight:bold}
+.top_hits_1_section .top_hits_1_wrapper .top_hits_1_heading_description{padding:10px}
+.top_hits_1_section .top_hits_1_wrapper .top_hits_1_items{margin:0}
+.top_hits_1_section .top_hits_1_wrapper .top_hits_1_items .top_hits_1_item{list-style:none;padding-top:15px;padding-bottom:15px}
+.top_hits_1_section .top_hits_1_wrapper .top_hits_1_items .top_hits_1_item a .top_hits_1_item_img{width:50%}
+.top_hits_1_section .top_hits_1_wrapper .top_hits_1_items .top_hits_1_item a .top_hits_1_item_img img{max-height:180px}
+.top_hits_1_section .top_hits_1_wrapper .top_hits_1_items .top_hits_1_item a .top_hits_1_item_content{width:50%}
+.top_hits_1_section .top_hits_1_wrapper .top_hits_1_items .top_hits_1_item a .top_hits_1_item_content h2{font-size:16px;font-weight:bold}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
 }

@@ -1,0 +1,48 @@
+.top_hits_1_section{
+    .top_hits_1_wrapper{
+        padding: 20px 15px;
+        .top_hits_1_heading{
+            padding-top: 20px;
+            padding-bottom: 10px;
+            h2{
+                margin: 0;
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+        .top_hits_1_heading_description{
+            padding: 10px;
+        }
+        .top_hits_1_line{
+
+        }
+        .top_hits_1_items{
+            margin: 0;
+            .top_hits_1_item{
+                list-style: none;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                // border-bottom: 0.5px solid #ccc;
+                a{
+                    .top_hits_1_item_img{
+                        width: 50%;
+                        img{
+                            max-height: 180px;
+                        }
+
+                    }
+                    .top_hits_1_item_content{
+                        width: 50%;
+                        h2{
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                        span{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
