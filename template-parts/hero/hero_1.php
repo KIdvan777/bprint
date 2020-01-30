@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-md-12 flex center-vertical">
                 <div class="hero_1_content">
-                    <div class="hero_1_content_heading">
+                    <div class="section_heading">
                         <h2>FIND SOMETHING FRESH.</h2>
                     </div>
-                    <div class="hero_1_content_description">
+                    <div class="section_desctiption">
                         <p>Design your own products? Online Design make it easy to create, sell, and order custom products.</p>
                     </div>
                     <div class="hero_1_content_form">

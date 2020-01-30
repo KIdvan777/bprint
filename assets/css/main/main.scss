@@ -16,3 +16,21 @@
 .center-horizontal{
     justify-content: center;
 }
+.wrapper{
+    padding: 40px 15px;
+}
+.section_heading{
+    padding-top: 20px;
+    padding-bottom: 20px;
+        h2{
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+.section_desctiption{
+    padding-bottom: 40px;
+    p{
+        font-size: 16px;
+    }
+}
