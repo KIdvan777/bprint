@@ -117,6 +117,8 @@ embed,iframe,object{max-width:100%}
 .gallery-columns-8 .gallery-item{max-width:12.5%}
 .gallery-columns-9 .gallery-item{max-width:11.11%}
 .gallery-caption{display:block}
+*{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}
+body{-webkit-box-sizing:border-box;box-sizing:border-box}
 .flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-flow:wrap;flex-flow:wrap}
 .center-vertical{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .space-between{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
@@ -192,6 +194,17 @@ embed,iframe,object{max-width:100%}
 .prefirance_1_section .prefirance_1_items .prefirance_1_item .prefirance_1_items_content{width:80%;padding:10px}
 .prefirance_1_section .prefirance_1_items .prefirance_1_item .prefirance_1_items_content h3{font-size:18px;font-weight:bold}
 .prefirance_1_section .prefirance_1_items .prefirance_1_item .prefirance_1_items_content p{font-size:16px}
+.tills_section{background-color:#f5f5f5}
+.tills_section .grid_wrapper{display:grid;padding:15px;grid-template-columns:repeat(6,1fr);grid-auto-rows:100px;grid-column-gap:1em;grid-row-gap:1em}
+.tills_section .grid_wrapper .box img{display:block;width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+.tills_section .grid_wrapper .box1{grid-column-start:1;grid-column-end:3;grid-row-start:1;grid-row-end:5}
+.tills_section .grid_wrapper .box2{grid-row-start:1;grid-row-end:3}
+.tills_section .grid_wrapper .box3{grid-row-start:3;grid-row-end:5}
+.tills_section .grid_wrapper .box4{grid-column-start:5;grid-column-end:7;grid-row-start:1;grid-row-end:3}
+.tills_section .grid_wrapper .box5{grid-row-start:1;grid-row-end:3}
+.tills_section .grid_wrapper .box6{grid-row-start:3;grid-row-end:5}
+.tills_section .grid_wrapper .box7{grid-row-start:3;grid-row-end:5}
+.tills_section .grid_wrapper .box8{grid-row-start:3;grid-row-end:5}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
 }
