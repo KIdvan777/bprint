@@ -22,6 +22,7 @@ get_header('bprint_1');
 <?php get_template_part('template-parts/top-hits/top_hits_2'); ?>
 <?php get_template_part('template-parts/tills/tills_1'); ?>
 <?php get_template_part('template-parts/blog/blog_1'); ?>
+<?php get_template_part('template-parts/brands/brands_1'); ?>
 
 <?php
-get_footer();
+get_footer('one');
