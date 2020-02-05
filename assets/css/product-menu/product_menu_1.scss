@@ -5,6 +5,7 @@
         .product_menu_1_heading{
             padding-top: 20px;
             padding-bottom: 10px;
+
             h2{
                 margin: 0;
                 font-size: 24px;
@@ -15,20 +16,30 @@
             padding: 0px 10px;
             .product_menu_1_item{
                 position: relative;
-                img{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                    margin-right: -50%;
-                    max-height: 100px;
-                    // border: 1px solid #ccc;
-                }
-                h2{
-                    margin-top: 140px;;
-                    font-size: 14px;
-                    font-weight: bold;
-                    text-align: center;
+                a{
+                    text-decoration: none;
+                    &:hover{
+                        h2{
+                            color: #39ace5;
+                        }
+
+                    }
+                    img{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        margin-right: -50%;
+                        max-height: 100px;
+                        // border: 1px solid #ccc;
+                    }
+                    h2{
+                        margin-top: 140px;;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-align: center;
+                        color: #404040;
+                    }
                 }
             }
         }

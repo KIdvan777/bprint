@@ -6,7 +6,12 @@
 
 body {
   box-sizing: border-box;
-  // font-size: 62.5%;
+  color: $main_text
+}
+
+.page, .post{
+    margin: 0;
+    padding: 0;
 }
 
 .flex{
@@ -28,7 +33,7 @@ body {
     justify-content: center;
 }
 .wrapper{
-    padding: 40px 15px;
+    padding: 40px 0px;
 }
 .section_heading{
     padding-top: 20px;

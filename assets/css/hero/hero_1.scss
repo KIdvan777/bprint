@@ -3,6 +3,12 @@
     color:#ffffff;
     .hero_1_content{
         width: 50%;
+        .section_desctiption{
+            padding-bottom: 20px;
+            p{
+                margin: 0;
+            }
+        }
         .hero_1_content_form{
             position: relative;
             input[type="text"]{
