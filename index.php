@@ -24,5 +24,6 @@ get_header('bprint_1');
 <?php get_template_part('template-parts/blog/blog_1'); ?>
 <?php get_template_part('template-parts/brands/brands_1'); ?>
 
+
 <?php
 get_footer('one');

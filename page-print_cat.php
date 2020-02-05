@@ -18,6 +18,7 @@ get_header('bprint_1');
 <?php get_template_part('template-parts/breadcrumbs/breadcrumbs_1'); ?>
 <?php get_template_part('template-parts/page/top_image_1'); ?>
 <?php get_template_part('template-parts/page/right_side_content_wrapper_1'); ?>
+<?php get_template_part('template-parts/footers/blue_line'); ?>
 
 <?php
 get_footer('one');
