@@ -1,14 +1,10 @@
 <div class="main_1_content_header flex space-between">
     <div class="main_1_content_header_swithers flex">
-        <div class="main_1_content_header_swithers_columns">
-            <a href="#">
-                <i class="fas fa-grip-vertical"></i>
-            </a>
+        <div id="page_column_switcher" class="main_1_content_header_swithers_columns">
+            <i class="fas fa-grip-vertical"></i>
         </div>
-        <div class="main_1_content_header_swithers_rows">
-            <a href="#">
-                <i class="fas fa-align-justify"></i>
-            </a>
+        <div  id="page_row_switcher" class="main_1_content_header_swithers_rows">
+            <i class="fas fa-align-justify"></i>
         </div>
         <div class="main_1_content_header_select">
             <label for="">Setter:
