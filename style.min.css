@@ -285,18 +285,32 @@ body{-webkit-box-sizing:border-box;box-sizing:border-box;color:#111a23}
 .main_1_content_section .main_1_content_header .main_1_content_header_swithers .main_1_content_header_select select{font-size:12px}
 .main_1_content_section .main_1_content_header .main_1_content_header_pagination{padding:0 5px}
 .main_1_content_section .main_1_content_header .main_1_content_header_pagination span{font-size:12px}
-.main_1_content_section .top_hits_1_items{margin:0;padding:0}
-.main_1_content_section .top_hits_1_items .top_hits_2_item{list-style:none;padding-top:15px;padding-bottom:15px;border:1px solid #fff}
-.main_1_content_section .top_hits_1_items .top_hits_2_item a{text-decoration:none}
-.main_1_content_section .top_hits_1_items .top_hits_2_item a .top_hits_2_item_img{width:100%;height:210px;position:relative;padding-top:30px}
-.main_1_content_section .top_hits_1_items .top_hits_2_item a .top_hits_2_item_img img{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);max-height:180px}
-.main_1_content_section .top_hits_1_items .top_hits_2_item a .top_hits_2_item_content{width:100%;padding:10px 10px}
-.main_1_content_section .top_hits_1_items .top_hits_2_item a .top_hits_2_item_content h2{margin:0;text-align:center;font-size:16px;font-weight:bold;color:#343434}
-.main_1_content_section .top_hits_1_items .top_hits_2_item a .top_hits_2_item_content p{margin:0;padding:10px 0;display:inline-block;width:100%;text-align:center;color:#c5c5c5;font-size:12px}
-.main_1_content_section .top_hits_1_items .top_hits_2_item a .top_hits_2_item_content .top_hits_1_item_content_price_old{color:#c5c5c5;font-size:12px}
-.main_1_content_section .top_hits_1_items .top_hits_2_item a .top_hits_2_item_content .top_hits_1_item_content_price{margin-left:10px;color:#39ace5;font-size:16px;font-weight:bold}
-.main_1_content_section .top_hits_1_items .top_hits_2_item a .top_hits_1_item_sale{position:absolute;z-index:9997;background-color:#eeb301;color:#fff;padding:4px 15px;font-size:10px}
-.main_1_content_section .top_hits_1_items .top_hits_2_item:hover{border:1px solid #ccc}
+.main_1_content_section .top_hits_1_items_col{margin:20px 0;padding:0}
+.main_1_content_section .top_hits_1_items_col .top_hits_2_item_col{list-style:none;padding-top:15px;padding-bottom:15px;border:1px solid #fff}
+.main_1_content_section .top_hits_1_items_col .top_hits_2_item_col a{text-decoration:none}
+.main_1_content_section .top_hits_1_items_col .top_hits_2_item_col a .top_hits_2_item_img_col{width:100%;height:210px;position:relative;padding-top:30px}
+.main_1_content_section .top_hits_1_items_col .top_hits_2_item_col a .top_hits_2_item_img_col img{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);max-height:180px}
+.main_1_content_section .top_hits_1_items_col .top_hits_2_item_col a .top_hits_2_item_content_col{width:100%;padding:10px 10px}
+.main_1_content_section .top_hits_1_items_col .top_hits_2_item_col a .top_hits_2_item_content_col h2{margin:0;text-align:center;font-size:16px;font-weight:bold;color:#343434}
+.main_1_content_section .top_hits_1_items_col .top_hits_2_item_col a .top_hits_2_item_content_col p{margin:0;padding:10px 0;display:inline-block;width:100%;text-align:center;color:#c5c5c5;font-size:12px}
+.main_1_content_section .top_hits_1_items_col .top_hits_2_item_col a .top_hits_2_item_content_col .top_hits_1_item_content_price_old_col{color:#c5c5c5;font-size:12px}
+.main_1_content_section .top_hits_1_items_col .top_hits_2_item_col a .top_hits_2_item_content_col .top_hits_1_item_content_price_col{margin-left:10px;color:#39ace5;font-size:16px;font-weight:bold}
+.main_1_content_section .top_hits_1_items_col .top_hits_2_item_col a .top_hits_1_item_sale_col{position:absolute;z-index:9997;background-color:#eeb301;color:#fff;padding:4px 15px;font-size:10px}
+.main_1_content_section .top_hits_1_items_col .top_hits_2_item_col:hover{border:1px solid #ccc}
+.main_1_content_section .top_hits_1_items_row{margin:20px 0;padding:0}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row{width:100%;list-style:none;padding-top:15px;padding-bottom:15px;border:1px solid #fff}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row a{text-decoration:none;padding:0 10px}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row a .top_hits_2_item_img_row{width:30%;height:210px;position:relative;padding-top:30px}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row a .top_hits_2_item_img_row img{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);max-height:180px}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row a .top_hits_2_item_content_row{width:70%;padding:10px 10px}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row a .top_hits_2_item_content_row h2{margin:0;font-size:16px;font-weight:bold;color:#343434}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row a .top_hits_2_item_content_row p{margin:10px 0;display:inline-block;width:100%;color:#111a23;font-size:12px}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row a .top_hits_2_item_content_row .top_hits_1_item_content_price_old_row{color:#c5c5c5;font-size:12px}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row a .top_hits_2_item_content_row .top_hits_1_item_content_price_row{margin-left:10px;color:#39ace5;font-size:16px;font-weight:bold}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row a .top_hits_2_item_content_row .top_hits_1_item_content_row_button{padding:8px 20px;font-size:12px;background-color:#39ace5;color:#fff}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row a .top_hits_2_item_content_row .top_hits_1_item_content_row_button i{margin-right:10px}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row a .top_hits_1_item_sale_row{position:absolute;z-index:9997;background-color:#eeb301;color:#fff;padding:4px 15px;font-size:10px}
+.main_1_content_section .top_hits_1_items_row .top_hits_2_item_row:hover{border:1px solid #ccc}
 .best_seller_1 .best_seller_1_heading{padding:10px 0}
 .best_seller_1 .best_seller_1_heading span{font-size:14px;font-weight:bold}
 .best_seller_1 .best_seller_1_items{margin:0}
