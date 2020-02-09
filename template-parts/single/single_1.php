@@ -52,21 +52,37 @@
                         <span class="top_hits_1_item_content_price_col">$89.86</span>
                     </div>
 
-                    <button type="button" name="button">Buy it Now</button>
-                    <h3>Availiable until Monday!</h3>
-                    <span>We reached our goal! You can keep byying untill the campaign ends!</span>
-                    <div class="">
-                        48 20 58 00
+                    <div class="single_1_content_button">Buy it Now</div>
+                    <div class="single_1_content_counter">
+                        <h3>Availiable until Monday!</h3>
+                        <span>We reached our goal! You can keep byying untill the campaign ends!</span>
+                        <ul class="single_1_content_counter_list flex">
+                            <li>48
+                                <div>DAYS</div>
+                            </li>
+                            <li>20
+                                <div>HOURS</div>
+                            </li>
+                            <li>58
+                                <div>MINS</div>
+                            </li>
+                            <li>00
+                                <div>SECS</div>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-12">
-                <div class="single_1_heading">
-                    <ul>
+            <div class="col-md-12 single_1_tabs">
+                <div class="single_1_tabs_heading">
+                    <ul class="single_1_tabs_list flex center-vertical center-horizontal">
                         <li>DESCRIPTION</li>
                         <li>REWIEWS</li>
                         <li>CUSTOM TABS</li>
                     </ul>
+                </div>
+                <div class="single_1_tabs_description">
                     <div class="single_1_description">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
@@ -82,7 +98,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 wrapper">
-                            <div class="section_heading flex center-horizontal">
+                            <div class="section_heading">
                                 <h5>BEST SELLER THIS WEEK</h5>
                             </div>
                             <div class="top_hits_1_line">
