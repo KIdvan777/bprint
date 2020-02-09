@@ -1,16 +1,27 @@
 <section class="single_1_section">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="single_1_images">
-                    <div class="single_1_images_main">
-
+            <div class="col-md-12 flex">
+                <div class="single_1_images col-md-6">
+                    <div class="single_1_images_main col-md-12">
+                        <img src="<?php echo get_template_directory_uri() . '/assets/img/Men-t-shirt-2.png'?>"/>
                     </div>
-                    <div class="single_1_images_gallery">
-
+                    <div class="single_1_images_gallery col-md-12 flex">
+                        <div class="col-md-3">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/img/Men-t-shirt-2.png'?>"/>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/img/Men-t-shirt-2.png'?>"/>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/img/Men-t-shirt-2.png'?>"/>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/img/Men-t-shirt-2.png'?>"/>
+                        </div>
                     </div>
                 </div>
-                <div class="single_1_content">
+                <div class="single_1_content col-md-6">
                     <h2>Autumn Winter fashion Europian</h2>
                     <span>Category</span>
                     <span>Condition</span>
