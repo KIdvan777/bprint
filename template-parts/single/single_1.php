@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12 flex">
                 <div class="single_1_images col-md-6">
-                    <div class="single_1_images_main col-md-12">
+                    <div class="single_1_images_main flex col-md-12 center-horizontal center-vertical">
                         <img src="<?php echo get_template_directory_uri() . '/assets/img/Men-t-shirt-2.png'?>"/>
                     </div>
                     <div class="single_1_images_gallery col-md-12 flex">
@@ -23,21 +23,35 @@
                 </div>
                 <div class="single_1_content col-md-6">
                     <h2>Autumn Winter fashion Europian</h2>
-                    <span>Category</span>
-                    <span>Condition</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <div class="single_1_content_stars">
+                        stars
+                    </div>
+                    <div class="single_1_content_cat">Categorys:
+                        <span>Men Fashion</span>
+                    </div>
+                    <div class="single_1_content_condition">Condition:
+                        <span>8 Days Return</span>
+                    </div>
+                    <p class="single_1_content_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     <div class="single_1_content_attr">
                         <form class="" action="index.html" method="post">
-                            <label for="">Size:
-                                <input type="text" name="" value="">
+                            <label for="" class="single_1_content_attr_size">Size:
+                                <select class="" name="">
+                                    <option value="">XXL</option>
+                                </select>
                             </label>
-                            <label for="">Color:
-                                <input type="text" name="" value="">
+                            <label for="" class="single_1_content_attr_color">Color:
+                                <select class="" name="">
+                                    <option value="">Blue</option>
+                                </select>
                             </label>
                         </form>
                     </div>
-                    <span class="top_hits_1_item_content_price_old_col">$129.86</span>
-                    <span class="top_hits_1_item_content_price_col">$89.86</span>
+                    <div class="single_1_content_price">
+                        <span class="top_hits_1_item_content_price_old_col">$129.86</span>
+                        <span class="top_hits_1_item_content_price_col">$89.86</span>
+                    </div>
+
                     <button type="button" name="button">Buy it Now</button>
                     <h3>Availiable until Monday!</h3>
                     <span>We reached our goal! You can keep byying untill the campaign ends!</span>
