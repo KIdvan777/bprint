@@ -135,11 +135,25 @@ body{-webkit-box-sizing:border-box;box-sizing:border-box;color:#111a23}
 .header_1 .header_1_nav .main_menu{margin:0;padding:0}
 .header_1 .header_1_nav .main_menu li{list-style:none;padding:0 20px}
 .header_1 .header_1_nav .main_menu li a{display:inline-block;padding:25px 0;text-decoration:none;color:#fff;font-size:12px}
+.header_1 .header_1_nav .main_menu .menu-item-has-children i{margin-left:10px}
+.header_1 .header_1_nav .main_menu .menu-item-has-children .sub-menu{display:none}
+.header_1 .header_1_nav .main_menu .menu-item-has-children:hover .sub-menu{padding:10px 0;margin:0;display:-webkit-box;display:-ms-flexbox;display:flex;position:absolute;left:0;background-color:#fff;z-index:99}
+.header_1 .header_1_nav .main_menu .menu-item-has-children:hover .sub-menu .sub_menu_item .sub-menu_item_part{width:50%;padding:10px}
+.header_1 .header_1_nav .main_menu .menu-item-has-children:hover .sub-menu .sub_menu_item .sub-menu_item_part a{display:block;padding:5px 5px;color:#111a23}
+.header_1 .header_1_nav .main_menu .menu-item-has-children:hover .sub-menu .sub_menu_item .sub-menu_item_part a h5{margin:0}
+.header_1 .header_1_nav .main_menu .menu-item-has-children:hover .sub-menu .sub_menu_item .sub-menu_item_part img{display:block;max-height:180px}
+.header_1 .header_1_nav .main_menu .menu-item-has-children:hover .sub-menu .sub_menu_item .level_2{display:block;position:relative;padding:0}
+.header_1 .header_1_nav .main_menu .menu-item-has-children:hover .sub-menu .sub_menu_item .level_2 li{padding:0 10px}
 .header_1 .header_1_right_side{padding:15px 10px;font-size:12px}
 .header_1 .header_1_right_side .auth{margin-right:20px;padding:10px}
 .header_1 .header_1_right_side .auth i{margin-right:5px}
 .header_1 .header_1_right_side .shop_cart{padding:10px}
 .header_1 .header_1_right_side .shop_cart i{margin-right:5px}
+.header_2{position:relative;background-color:#39ace5;color:#fff}
+.header_2 .main_menu li{width:100%;height:100%;padding-bottom:10px}
+.header_2 .main_menu li a{text-decoration:none;color:#111a23}
+.header_2 .main_menu li .sub-menu{display:none}
+.header_2 .main_menu li:hover .sub-menu{display:block;position:absolute;background-color:#fff;z-index:9999}
 .slick-slider{position:relative;display:block;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
 .slick-list{position:relative;overflow:hidden;display:block;margin:0;padding:0}
 .slick-list:focus{outline:0}

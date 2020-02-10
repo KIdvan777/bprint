@@ -3,7 +3,8 @@
  * Enqueue scripts and styles.
  */
 function bprint_scripts() {
-    wp_enqueue_style( 'bprint_bootstrap_css', "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" );
+    wp_register_style( 'bprint_bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css' );
+    wp_enqueue_style( 'bprint_bootstrap' );
 
     wp_enqueue_style( 'bprint_font_awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" );
 

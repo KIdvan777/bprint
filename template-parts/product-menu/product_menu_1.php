@@ -40,7 +40,7 @@
                         <a href="#">
                             <img src="<?php echo get_template_directory_uri() . '/assets/img/trous_1.png'?>"/>
                             <h2>TROUSERS</h2>
-                        </a>    
+                        </a>
                     </div>
                 </div>
             </div>
