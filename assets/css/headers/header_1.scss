@@ -66,34 +66,6 @@
                             }
                         }
                     }
-                }&:hover{
-                    .sub-menu{
-                        // margin: 0;
-                        // display: flex;
-                        // position: absolute;
-                        // left: 0;
-                        // background-color: #fff;
-                        // z-index: 99;
-                        // .sub_menu_item{
-                        //     width: 100%;
-                        //     border: 1px solid #ccc;
-                        //
-                        // }
-                        // .sub-menu_item_part{
-                        //     width: 50%;
-                        //     a{
-                        //
-                        //
-                        //         color: $main_text;
-                        //         border: 1px solid #ccc;
-                        //     }
-                        //     img{
-                        //         display: block;
-                        //         max-height: 180px;
-                        //         border: 1px solid #ccc;
-                        //     }
-                        // }
-                    }
                 }
             }
         }
@@ -116,3 +88,4 @@
         }
     }
 }
+@import 'header_1_media.scss';

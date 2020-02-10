@@ -21,4 +21,18 @@ jQuery(function($){
         });
       });
 
+
+    // Right Slide Menu
+    $('.header_1_mobile_nav_burger').click(function(){
+        $(".left_side_menu_1").animate({
+            left: '0%',
+        });
+    });
+
+    $('.right_side').click(function(){
+        $(".left_side_menu_1").animate({
+            left: '-100%',
+        });
+    });
+
 });
