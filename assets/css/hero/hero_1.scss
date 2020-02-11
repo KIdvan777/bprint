@@ -1,6 +1,22 @@
 .hero_1_section{
     background-color: #243a53;
     color:#ffffff;
+    &:hover{
+        .hero_1_slider_arrow_left{
+            position: absolute;
+            top: 50%;
+            left: -5%;
+            font-size: 24px;
+            display: none;
+        }
+        .hero_1_slider_arrow_right{
+            position: absolute;
+            top: 50%;
+            left: 105%;
+            font-size: 24px;
+            display: none;
+        }
+    }
     .hero_1_content{
         width: 50%;
         .section_desctiption{
@@ -54,5 +70,17 @@
     .hero_1_img{
         width: 50%;
         padding: 20px;
+    }
+    .hero_1_slider_arrow_left{
+        position: absolute;
+        top: 50%;
+        left: -5%;
+        font-size: 24px;
+    }
+    .hero_1_slider_arrow_right{
+        position: absolute;
+        top: 50%;
+        left: 105%;
+        font-size: 24px;
     }
 }

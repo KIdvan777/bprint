@@ -134,7 +134,7 @@ body{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;colo
 .header_1 .header_1_logo h1{margin:0;padding:15px 10px}
 .header_1 .header_1_nav .main_menu{margin:0;padding:0}
 .header_1 .header_1_nav .main_menu li{list-style:none;padding:0 20px}
-.header_1 .header_1_nav .main_menu li a{display:inline-block;padding:25px 0;text-decoration:none;color:#fff;font-size:12px}
+.header_1 .header_1_nav .main_menu li a{display:inline-block;padding:25px 0;text-decoration:none;color:#fff;font-size:14px}
 .header_1 .header_1_nav .main_menu .menu-item-has-children i{margin-left:10px}
 .header_1 .header_1_nav .main_menu .menu-item-has-children .sub-menu{display:none}
 .header_1 .header_1_nav .main_menu .menu-item-has-children:hover .sub-menu{padding:10px 0;margin:0;display:-webkit-box;display:-ms-flexbox;display:flex;position:absolute;left:0;background-color:#fff;z-index:99}
@@ -196,6 +196,8 @@ body{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;colo
 .slick-dots li button:before{position:absolute;top:0;left:0;content:"•";width:20px;height:20px;font-family:"slick";font-size:6px;line-height:20px;text-align:center;color:black;opacity:.25;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .slick-dots li.slick-active button:before{color:black;opacity:.75}
 .hero_1_section{background-color:#243a53;color:#fff}
+.hero_1_section:hover .hero_1_slider_arrow_left{position:absolute;top:50%;left:-5%;font-size:24px;display:none}
+.hero_1_section:hover .hero_1_slider_arrow_right{position:absolute;top:50%;left:105%;font-size:24px;display:none}
 .hero_1_section .hero_1_content{width:50%}
 .hero_1_section .hero_1_content .section_desctiption{padding-bottom:20px}
 .hero_1_section .hero_1_content .section_desctiption p{margin:0}
@@ -213,6 +215,8 @@ body{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;colo
 .hero_1_section .hero_1_content .hero_1_content_buttons .start_designing{background-color:#eeb301}
 .hero_1_section .hero_1_content .hero_1_content_buttons .view_shop{background-color:#39ace5}
 .hero_1_section .hero_1_img{width:50%;padding:20px}
+.hero_1_section .hero_1_slider_arrow_left{position:absolute;top:50%;left:-5%;font-size:24px}
+.hero_1_section .hero_1_slider_arrow_right{position:absolute;top:50%;left:105%;font-size:24px}
 .hero_1_section{background-color:#243a53;color:#fff}
 .hero_1_section .hero_1_content{width:100%}
 .hero_1_section .hero_1_content .hero_1_content_items{width:50%}

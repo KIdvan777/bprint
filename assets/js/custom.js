@@ -13,10 +13,12 @@ jQuery(function ($) {
 
   $(document).ready(function () {
     $('.hero_2_items').slick({
-      autoplay: true // slidesPerRow: 1,
+      autoplay: true,
+      // slidesPerRow: 1,
       // slidesToScroll: 1,
       // speed: 600
-
+      prevArrow: '<i class="far fa-arrow-alt-circle-right hero_1_slider_arrow_right"></i>',
+      nextArrow: '<i class="far fa-arrow-alt-circle-left hero_1_slider_arrow_left"></i>'
     });
   }); // Right Slide Menu
 
