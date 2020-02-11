@@ -139,57 +139,7 @@
            </div>
 	</footer>
 </div><!-- #page -->
-<!-- <section class="left_side_menu_1"> -->
-	<div class="left_side_menu_1_logo">
-		<div class="header_1_logo">
-			<h1>Bprint</h1>
-		</div>
-	</div>
-	<div class="left_side_menu_1_nav">
-		<ul class="left_side_menu_1list">
-			<li>
-				<a href="#">
-					FEAUTURES
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					SHOP
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					PRODUCT
-					<i class="fas fa-caret-down">
-					</i>
-				</a>
-				<ul>
-					<li>
-						<a href="#">
-							link
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">
-					OUR GALLERY
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					START DESIGNING
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="left_side_menu_1_about">
-		<h5>ABOUT</h5>
-	</div>
-	<div class="left_side_menu_1_social">
-		<h5>SOCIAL</h5>
-	</div>
-</section>
+
 <?php wp_footer(); ?>
 
 </body>

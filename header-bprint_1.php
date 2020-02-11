@@ -122,15 +122,18 @@
             </div>
         </div>
     </header><!-- #masthead -->
-	<section class="left_side_menu_1 flex">
+	<section class="left_side_menu_1">
 		<div class="left_side">
 			<div class="left_side_menu_1_logo">
-				<div class="header_1_logo">
+				<div class="header_1_logo  flex center-vertical center-horizontal">
 					<h1>Bprint</h1>
+				</div>
+				<div class="left_side_menu_1_logo_desc flex center-vertical center-horizontal">
+					Some text here Some text here Some text here
 				</div>
 			</div>
 			<div class="left_side_menu_1_nav">
-				<ul class="left_side_menu_1list">
+				<ul class="left_side_menu_1_list">
 					<li>
 						<a href="#">
 							FEAUTURES
@@ -141,13 +144,23 @@
 							SHOP
 						</a>
 					</li>
-					<li>
+					<li class="menu-item-has-children">
 						<a href="#">
 							PRODUCT
 							<i class="fas fa-caret-down">
 							</i>
 						</a>
-						<ul>
+						<ul class="sub-menu">
+							<li>
+								<a href="#">
+									link
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									link
+								</a>
+							</li>
 							<li>
 								<a href="#">
 									link
@@ -169,12 +182,21 @@
 			</div>
 			<div class="left_side_menu_1_about">
 				<h5>ABOUT</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 			<div class="left_side_menu_1_social">
 				<h5>SOCIAL</h5>
+				<div class="footer_1_header_social_icons flex">
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-twitter-square"></i>
+					<i class="fab fa-google-plus-square"></i>
+					<i class="fab fa-vimeo-square"></i>
+					<i class="fab fa-youtube-square"></i>
+					<!-- <i class="fab fa-linkedin"></i> -->
+				</div>
 			</div>
 		</div>
-		<div class="right_side">
+		<div class="left_side_menu_1_close_button">
 			x
 		</div>
 

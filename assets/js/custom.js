@@ -25,9 +25,13 @@ jQuery(function ($) {
       left: '0%'
     });
   });
-  $('.right_side').click(function () {
+  $('.left_side_menu_1_close_button').click(function () {
     $(".left_side_menu_1").animate({
       left: '-100%'
     });
+  });
+  $(".left_side_menu_1_nav .sub-menu").hide();
+  $('.menu-item-has-children').click(function () {
+    $(".left_side_menu_1_nav .sub-menu").slideToggle();
   });
 });
