@@ -13,10 +13,14 @@
                 </div>
                 <ul class="top_hits_1_items col-md-12 flex">
                     <?php
+                        $args = array(
+                            'posts_per_page' => 6
+                        );
                         $products = wc_get_products( $args );
 
                            foreach($products as $product):
                                // pr($product);
+                               $product_link = get_permalink( $product->get_id() );
                                $product_name = $product->get_name();
                                $product_price = $product->get_price();
                                $product_desc = $product->get_short_description();
@@ -24,7 +28,7 @@
                                $image_url = wp_get_attachment_image_src($product->get_image_id());
                            ?>
                             <li class="top_hits_1_item col-md-4">
-                               <a href="#" class="flex">
+                               <a href="<?php echo $product_link;?>" class="flex">
                                    <div class="top_hits_1_item_img">
                                        <img src="<? echo $image_url[0];?>" alt="">
                                    </div>
