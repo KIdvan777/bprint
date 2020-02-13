@@ -6,42 +6,31 @@
                     <h2>DESIGN AMAZING STREETWEAR</h2>
                 </div>
                 <div class="product_menu_1_items col-md-12 flex">
-                    <div class="col-md-2 product_menu_1_item">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/img/Men-t-shirt-2.png'?>"/>
-                            <h2>POCKET T-SHIRT</h2>
-                        </a>
-                    </div>
-                    <div class="col-md-2 product_menu_1_item">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/img/lettering.png'?>"/>
-                            <h2>PRINTED T-SHIRT</h2>
-                        </a>
-                    </div>
-                    <div class="col-md-2 product_menu_1_item">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/img/beanie_2.png'?>"/>
-                            <h2>BEANIES</h2>
-                        </a>
-                    </div>
-                    <div class="col-md-2 product_menu_1_item">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/img/hoodie_5.png'?>"/>
-                            <h2>HOODIES</h2>
-                        </a>
-                    </div>
-                    <div class="col-md-2 product_menu_1_item">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/img/snap_6.png'?>"/>
-                            <h2>SNAPBACKS</h2>
-                        </a>
-                    </div>
-                    <div class="col-md-2 product_menu_1_item">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/img/trous_1.png'?>"/>
-                            <h2>TROUSERS</h2>
-                        </a>
-                    </div>
+                    <?php
+                           $terms = get_terms( 'product_cat' );
+                               if( $terms && ! is_wp_error($terms) ){
+                                   foreach( $terms as $term ){?>
+                                       <?php
+                                           $term_id = $term->term_id;
+                                           $image_id = get_term_meta( $term_id, '_thumbnail_id', 1 );
+                                           $image_url = wp_get_attachment_image_url( $image_id, 'full' );
+                                        ?>
+                                           <div class="col-md-2 product_menu_1_item">
+                                              <a href="<?php echo get_term_link( $term ); ?>">
+                                                   <?php
+                                                      if($image_url):
+                                                          echo '<img src="'. $image_url .'" alt="" />';
+                                                       else:
+                                                           // echo '<img src="//localhost:3000/wp-content/uploads/2019/12/album-1.jpg" alt="" />';
+                                                       endif;
+                                                   ?>
+                                                   <h2><?php echo $term->name ?></h2>
+
+                                              </a>
+                                          </div>
+                                   <?}
+                               }
+                           ?>
                 </div>
             </div>
         </div>

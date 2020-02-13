@@ -12,103 +12,34 @@
 
                 </div>
                 <ul class="top_hits_1_items col-md-12 flex">
-                    <li class="top_hits_1_item col-md-4">
-                        <a href="#" class="flex">
-                            <div class="top_hits_1_item_img">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/img/Men-t-shirt-2.png'?>"/>
-                            </div>
-                            <div class="top_hits_1_item_content">
-                                <h2>Funny St.Patrick`s Day Beer T-Shirt</h2>
-                                <p>By Funny Patrick`s Day</p>
-                                <span class="top_hits_1_item_content_price_old">$129.86</span>
-                                <span class="top_hits_1_item_content_price">$89.86</span>
-                            </div>
-                            <div class="top_hits_1_item_sale">
-                                -35%
-                            </div>
-                        </a>
+                    <?php
+                        $products = wc_get_products( $args );
 
-                    </li>
-                    <li class="top_hits_1_item col-md-4">
-                        <a href="#" class="flex">
-                            <div class="top_hits_1_item_img">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/img/lettering.png'?>"/>
-                            </div>
-                            <div class="top_hits_1_item_content">
-                                <h2>Funny St.Patrick`s Day Beer T-Shirt</h2>
-                                <p>By Funny Patrick`s Day</p>
-                                <span class="top_hits_1_item_content_price_old">$129.86</span>
-                                <span class="top_hits_1_item_content_price">$89.86</span>
-                            </div>
-                            <div class="top_hits_1_item_sale">
-                                -35%
-                            </div>
-                        </a>
-                    </li>
-                    <li class="top_hits_1_item col-md-4">
-                        <a href="#" class="flex">
-                            <div class="top_hits_1_item_img">
-                                    <img src="<?php echo get_template_directory_uri() . '/assets/img/hoodie_5.png'?>"/>
-                            </div>
-                            <div class="top_hits_1_item_content">
-                                <h2>Funny St.Patrick`s Day Beer T-Shirt</h2>
-                                <p>By Funny Patrick`s Day</p>
-                                <span class="top_hits_1_item_content_price_old">$129.86</span>
-                                <span class="top_hits_1_item_content_price">$89.86</span>
-                            </div>
-                            <div class="top_hits_1_item_sale">
-                                -35%
-                            </div>
-                        </a>
-                    </li>
-                    <li class="top_hits_1_item col-md-4">
-                        <a href="#" class="flex">
-                            <div class="top_hits_1_item_img">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/img/trous_1.png'?>"/>
-                            </div>
-                            <div class="top_hits_1_item_content">
-                                <h2>Funny St.Patrick`s Day Beer T-Shirt</h2>
-                                <p>By Funny Patrick`s Day</p>
-                                <span class="top_hits_1_item_content_price_old">$129.86</span>
-                                <span class="top_hits_1_item_content_price">$89.86</span>
-                            </div>
-                            <div class="top_hits_1_item_sale">
-                                -35%
-                            </div>
-                        </a>
-                    </li>
-                    <li class="top_hits_1_item col-md-4">
-                        <a href="#" class="flex">
-                            <div class="top_hits_1_item_img">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/img/snap_6.png'?>"/>
-                            </div>
-                            <div class="top_hits_1_item_content">
-                                <h2>Funny St.Patrick`s Day Beer T-Shirt</h2>
-                                <p>By Funny Patrick`s Day</p>
-                                <span class="top_hits_1_item_content_price_old">$129.86</span>
-                                <span class="top_hits_1_item_content_price">$89.86</span>
-                            </div>
-                            <div class="top_hits_1_item_sale">
-                                -35%
-                            </div>
-                        </a>
-                    </li>
-                    <li class="top_hits_1_item col-md-4">
-                        <a href="#" class="flex">
-                            <div class="top_hits_1_item_img">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/img/Men-t-shirt-2.png'?>"/>
-                            </div>
-                            <div class="top_hits_1_item_content">
-                                <h2>Funny St.Patrick`s Day Beer T-Shirt</h2>
-                                <p>By Funny Patrick`s Day</p>
-                                <span class="top_hits_1_item_content_price_old">$129.86</span>
-                                <span class="top_hits_1_item_content_price">$89.86</span>
-                            </div>
-                            <div class="top_hits_1_item_sale">
-                                -35%
-                            </div>
-                        </a>
-                    </li>
+                           foreach($products as $product):
+                               // pr($product);
+                               $product_name = $product->get_name();
+                               $product_price = $product->get_price();
+                               $product_desc = $product->get_short_description();
+                               $product_sale = $product->get_sale_price();
+                               $image_url = wp_get_attachment_image_src($product->get_image_id());
+                           ?>
+                            <li class="top_hits_1_item col-md-4">
+                               <a href="#" class="flex">
+                                   <div class="top_hits_1_item_img">
+                                       <img src="<? echo $image_url[0];?>" alt="">
+                                   </div>
+                                   <div class="top_hits_1_item_content">
+                                       <h2><?php  echo $product_name; ?></h2>
+                                       <?php echo $product_desc; ?>
+                                       <span class="top_hits_1_item_content_price_old"><?php echo $product_price; ?></span>
+                                       <span class="top_hits_1_item_content_price"><?php echo $product_sale ; ?></span>
+                                   </div>
+                                   <div class="top_hits_1_item_sale">
+                                       -35%
+                                   </div>
+                               </a>
+                            </li>
+                    <?php endforeach;?>
                 </ul>
             </div>
         </div>

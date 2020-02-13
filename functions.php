@@ -13,6 +13,16 @@
 require get_template_directory() . '/inc/setup/setup.php';
 
 /**
+ * Var Dump Functions.
+ */
+require get_template_directory() . '/inc/var_dump.php';
+
+/**
+ * Add image for taxonomies.
+ */
+require get_template_directory() . '/inc/setup/cat-image.php';
+
+/**
  * New nav menu walker.
  */
 require get_template_directory() . '/inc/classes/class-walker-nav-menu-bprint.php';
