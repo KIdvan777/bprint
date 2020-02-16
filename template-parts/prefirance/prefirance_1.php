@@ -15,6 +15,30 @@
 
                 </div>
                 <div class="prefirance_1_items flex">
+                    <?php
+
+                        $args = array(
+                            'posts_per_page' => 4,
+                            'post_type' => 'advantage'
+                        );
+                        $advantage_post = new WP_Query($args);
+
+                        while ( $advantage_post->have_posts() ) {
+                        	$advantage_post->the_post();?>
+
+                            <div class="prefirance_1_item col-md-6 flex">
+                                <div class="prefirance_1_items_icon">
+                                    <?php the_post_thumbnail(); ?>
+                                    <!-- <i class="fas fa-question"></i> -->
+                                </div>
+                                <div class="prefirance_1_items_content">
+                                    <h3><?php the_title(); ?></h3>
+                                    <p><?php the_content(); ?></p>
+                                </div>
+                            </div>
+                        <?} wp_reset_query();
+
+                    ?>
                     <div class="prefirance_1_item col-md-6 flex">
                         <div class="prefirance_1_items_icon">
                             <i class="fas fa-question"></i>
@@ -24,33 +48,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
-                    <div class="prefirance_1_item col-md-6 flex">
-                        <div class="prefirance_1_items_icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="prefirance_1_items_content">
-                            <h3>HIGHT QUALITY</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
-                    <div class="prefirance_1_item col-md-6 flex">
-                        <div class="prefirance_1_items_icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="prefirance_1_items_content">
-                            <h3>HIGHT QUALITY</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
-                    <div class="prefirance_1_item col-md-6 flex">
-                        <div class="prefirance_1_items_icon">
-                            <i class="fas fa-question"></i>
-                        </div>
-                        <div class="prefirance_1_items_content">
-                            <h3>HIGHT QUALITY</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
+
 
                 </div>
             </div>
