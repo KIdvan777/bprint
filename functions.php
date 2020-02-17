@@ -73,3 +73,16 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * Font Awesome Kit Setup
+ *
+ * This will add your Font Awesome Kit to the front-end, the admin back-end,
+ * and the login screen area.
+ */
+require get_template_directory() . '/inc/font-awesome/fw-init.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/metabox/advantages/fw-adv-metabox.php';

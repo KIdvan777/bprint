@@ -6,7 +6,7 @@ function bprint_scripts() {
     wp_register_style( 'bprint_bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css' );
     wp_enqueue_style( 'bprint_bootstrap' );
 
-    wp_enqueue_style( 'bprint_font_awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" );
+    // wp_enqueue_style( 'bprint_font_awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" );
 
 	wp_enqueue_style( 'bprint-style', get_stylesheet_uri() );
 

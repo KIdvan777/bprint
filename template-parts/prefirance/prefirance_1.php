@@ -29,6 +29,7 @@
                             <div class="prefirance_1_item col-md-6 flex">
                                 <div class="prefirance_1_items_icon">
                                     <?php the_post_thumbnail(); ?>
+                                    <?php echo get_post_meta( $post->ID, '_advantage_font_awesome_value_key', true); ?>
                                     <!-- <i class="fas fa-question"></i> -->
                                 </div>
                                 <div class="prefirance_1_items_content">
