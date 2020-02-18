@@ -8,6 +8,11 @@
  */
 
  /**
+  * Admin functions.
+  */
+require get_template_directory() . '/inc/admin/functions.php';
+
+ /**
   * Setup functions.
   */
 require get_template_directory() . '/inc/setup/setup.php';

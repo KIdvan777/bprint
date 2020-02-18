@@ -28,9 +28,11 @@
 
                             <div class="prefirance_1_item col-md-6 flex">
                                 <div class="prefirance_1_items_icon">
-                                    <?php the_post_thumbnail(); ?>
-                                    <?php echo get_post_meta( $post->ID, '_advantage_font_awesome_value_key', true); ?>
-                                    <!-- <i class="fas fa-question"></i> -->
+
+                                    <?php if(get_post_meta( $post->ID, '_advantage_font_awesome_value_key', true) == 'icon'){
+                                        echo '<i class="fa fa-caret-down"></i>';
+                                    } ?>
+
                                 </div>
                                 <div class="prefirance_1_items_content">
                                     <h3><?php the_title(); ?></h3>

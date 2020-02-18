@@ -11,9 +11,18 @@ function custom_advantage_font_awesome_metabox_callback($post)
     wp_nonce_field('save_advantage_font_awesome_data', "custom_advantage_font_awesome_metabox_nonce");
     $value = get_post_meta( $post->ID, '_advantage_font_awesome_value_key', true);
 
+    $icons_list = array(
+        'icon'=>'img',
+        'icon_2'=> 'icon'
+    );
+
     ?>
         <label for="fa-dropdown">Icon</label>
-        <input type="text" name="fa-dropdown" value="<?php echo $value; ?>">
+        <select class="" name="fa-dropdown">
+            <?php foreach( $icons_list as $key=>$value): ?>
+                <option ><?php echo $value; ?></option>
+            <?php endforeach; ?>
+        </select>
     <?php
 }
 
