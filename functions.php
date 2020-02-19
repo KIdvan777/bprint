@@ -8,6 +8,11 @@
  */
 
  /**
+  * Off or On guttenberg.
+  */
+require get_template_directory() . '/inc/gutenberg-init.php';
+
+ /**
   * Admin functions.
   */
 require get_template_directory() . '/inc/admin/functions.php';
@@ -39,7 +44,7 @@ require get_template_directory() . '/inc/classes/class-walker-nav-menu-bprint.ph
  *
  * @global int $content_width
  */
- require get_template_directory() . '/inc/setup/content-width.php';
+require get_template_directory() . '/inc/setup/content-width.php';
 
 /**
  * Enqueue scripts and styles.

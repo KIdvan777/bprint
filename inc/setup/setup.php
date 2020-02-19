@@ -72,6 +72,8 @@ if ( ! function_exists( 'bprint_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+		require get_template_directory() . '/inc/theme-support.php';
 	}
 endif;
 add_action( 'after_setup_theme', 'bprint_setup' );
