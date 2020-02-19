@@ -22,6 +22,7 @@ function bprint_add_admin_page()
 
 function bprint_custom_settings()
 {
+    register_setting('bprint-settings-group', 'profile_picture');
     register_setting('bprint-settings-group', 'first_name');
     register_setting('bprint-settings-group', 'last_name');
     register_setting('bprint-settings-group', 'user_description');
@@ -29,6 +30,7 @@ function bprint_custom_settings()
 
     add_settings_section('bprint-sidebar-options', 'Sidebar Opitons', 'bprint_sidebar_options', 'hask777-bprint');
 
+    add_settings_field('sidebar-profile-picture', 'Profile Picture', 'bprint_sidebar_profile', 'hask777-bprint', 'bprint-sidebar-options');
     add_settings_field('sidebar-name', 'Full Name', 'bprint_sidebar_name', 'hask777-bprint', 'bprint-sidebar-options');
     add_settings_field('sidebar-description', 'Description', 'bprint_sidebar_description', 'hask777-bprint', 'bprint-sidebar-options');
     add_settings_field('sidebar-twitter', 'Twitter Handler', 'bprint_sidebar_twitter', 'hask777-bprint', 'bprint-sidebar-options');
@@ -37,6 +39,14 @@ function bprint_custom_settings()
 function bprint_sidebar_options()
 {
     echo 'Customize your Sidebar Information';
+}
+
+function bprint_sidebar_profile()
+{
+    $picture= esc_attr(get_option('profile_picture'));
+    echo
+    '<input type="button" class="button button-secondary" value="Upload Profile Picture" id="upload-button"/>
+     <input type="hidden" id="profile-picture" name="profile_picture" value="' . $picture . '" />';
 }
 
 function bprint_sidebar_name()
